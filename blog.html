@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="contailer mx-auto w-9/12  bg-slate-300">
+    <header class=" bg-white ">
+        <!-- Navbar -->
+         <nav class="border-none rounded-lg">
+            <div class="navbar">
+                <div class="navbar-start gap-5 text-4xl">
+                  <img src="./assets/logo.png" alt="Logo">
+                  <h1>Dev<span class=" font-bold">Board</span> </h1>
+                    
+                </div>
+                
+                
+                <div class="navbar-end flex gap-8  mb-4"> 
+
+                   <!-- <img id="theme-btn" class="cursor-pointer" src="./assets/theme-btn.png" alt=""> -->
+                    <button id="return-btn" class="bg-blue-700 text-white rounded-lg w-30 h-15 font-bold cursor-pointer">Back To Board</button>
+                </div>     
+                </div> 
+              </div>
+              
+         </nav>
+            <!-- Navbar End -->
+         
+    </header>
+
+     <!-- Blog Section -->
+    <div>
+        <h1 class="font-bold text-3xl mb-6">Question-1: What are the different ways to select an element in the DOM?</h1>
+        <textarea class="w-10/12 text-3xl h-40 bg-slate-100 mb-6" name="" id="" placeholder="Write your Answer Here">There are few different ways to select an element in DOM. document.getElementbyId() is the most efficient way to select a single element.  On the other hand document.getElementsByClassName() is another way to select multiple elements with the same class name. Similarly, document.getElementsByTagName() also returns a collection of elements with a specific tag.
+        </textarea>
+
+        <h1 class="font-bold text-3xl mb-6">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+        <textarea class="w-10/12 text-3xl h-40 bg-slate-100 mb-6" name="" id="" placeholder="Write your Answer Here" name="" id="" placeholder="">innterHTML lets get and set HTML marks. Which means HTML text can be pushed and taken out of a page. On the other hand innerText gets and sets the visible text content of an element. innerText considers CSS styling so hidden text will not be included. Finally, textContent also gets and sets text content of an element but includes all elements and their text. It does not consider CSS so it can include hidden elements.     </textarea>
+
+        <h1 class="font-bold text-3xl mb-6">Question-3: What is event delegation in the DOM?</h1>
+        <textarea class="w-10/12 text-3xl h-40 bg-slate-100 mb-6" name="" id="" placeholder="Write your Answer Here">Event delegation in an effective and powerful way to efficiently handle events on a large number of elements. Event delegation delegates the event to a parent element instead of handling multiple child events. Parent element's event listener can then delegate the handling of the event. 
+        </textarea>
+
+        <h1 class="font-bold text-3xl mb-6">Question-4: What is event bubbling in the DOM?</h1>
+        <textarea class="w-10/12 text-3xl h-40 bg-slate-100 mb-6" name="" id="" placeholder="Write your Answer Here">Event bubbling allows the child event to bubble up to the parent element then to its grandparent and all the way to the document object.  Event delegation uses this technique to handle events effectively by placing a single event listener to the parent element.</textarea>
+
+        <h1 class="font-bold text-3xl">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+        <textarea class="w-10/12 text-3xl h-40 bg-slate-100 mb-6" name="" id="" placeholder="Write your Answer Here">Javascript has different methods to create, add and remove elements. document.createElement(tagName) method can add elements with a specific tag. Similarly JS can add a child element by using document.appendChild(childElement). To remove a child element JS uses element.removeChild(childElement) method. </textarea>
+    </div>
+
+    <!-- Blog Section End -->
+
+    <script src="./scripts/return.js"></script>
+</body>
+</html>
