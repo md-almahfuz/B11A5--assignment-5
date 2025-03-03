@@ -1,7 +1,7 @@
 document.getElementById('card4-btn').addEventListener('click', 
 function(event)
 {
-  //event.preventDefault();
+  event.preventDefault();
 
   alert("Board Updated Successfully");
   this.classList.add('opacity-50');
