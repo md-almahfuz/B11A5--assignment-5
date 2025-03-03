@@ -11,7 +11,7 @@ function(event)
   const cardTitle = document.getElementById('card-title-1').innerText;
  // const cardTitle = getInnerTextbyID(id)
   alert(cardTitle);
-  compltedTaskActions();
+  compltedTaskActions(cardTitle);
 
 })
 
@@ -26,7 +26,7 @@ document.getElementById('card5-btn').addEventListener('click',
     this.blur();
 
     const cardTitle = document.getElementById('card-title-2').innerText;
-    compltedTaskActions();
+    compltedTaskActions(cardTitle);
   
   })
 
@@ -42,7 +42,7 @@ document.getElementById('card6-btn').addEventListener('click',
       this.blur();
       const cardTitle = document.getElementById('card-title-3').innerText;
 
-      compltedTaskActions();
+      compltedTaskActions(cardTitle);
     
     })
 
@@ -57,7 +57,7 @@ document.getElementById('card7-btn').addEventListener('click',
         this.blur();
 
         const cardTitle = document.getElementById('card-title-4').innerText;
-        compltedTaskActions();
+        compltedTaskActions(cardTitle);
       
       })
 
@@ -71,7 +71,7 @@ document.getElementById('card8-btn').addEventListener('click',
           this.disabled = true;
           this.blur();
           const cardTitle = document.getElementById('card-title-5').innerText;
-          compltedTaskActions();
+          compltedTaskActions(cardTitle);
         
         })
 
@@ -85,6 +85,6 @@ document.getElementById('card9-btn').addEventListener('click',
             this.disabled = true;
             this.blur();
             const cardTitle = document.getElementById('card-title-6').innerText;
-            compltedTaskActions();
+            compltedTaskActions(cardTitle);
           
           })

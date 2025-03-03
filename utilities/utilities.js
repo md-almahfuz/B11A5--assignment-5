@@ -49,7 +49,7 @@ function removeElementByDivID(id)
       }
 }
 
-function compltedTaskActions()
+function compltedTaskActions(taskName)
 {
     let amount = getInnerTextbyID('total-tasks');
     amount = amount - 1;
@@ -63,7 +63,7 @@ function compltedTaskActions()
     score = score + 1;
     setInputValuebyIDandValue('total-score', score);
         
-    logMessage = "Task Completed Successfully";
+    logMessage = "Task Completed Successfully" + " " + taskName;
     addParagraphToDiv('task-log', logMessage);
     if(amount === 0)
     {
