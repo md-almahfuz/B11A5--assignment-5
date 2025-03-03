@@ -49,7 +49,8 @@ function removeElementByDivID(id)
       }
 }
 
-function compltedTaskActions(taskName)
+//Update activity log with task completion time
+function compltedTaskActions(taskName, time)
 {
     let amount = getInnerTextbyID('total-tasks');
     amount = amount - 1;
@@ -63,7 +64,7 @@ function compltedTaskActions(taskName)
     score = score + 1;
     setInputValuebyIDandValue('total-score', score);
         
-    logMessage = "Task Completed Successfully" + " " + taskName;
+    logMessage = "You have completed task: " + " " + taskName + " at " + time;
     addParagraphToDiv('task-log', logMessage);
     if(amount === 0)
     {

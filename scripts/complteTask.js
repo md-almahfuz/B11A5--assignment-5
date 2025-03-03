@@ -10,8 +10,9 @@ function(event)
 
   const cardTitle = document.getElementById('card-title-1').innerText;
  // const cardTitle = getInnerTextbyID(id)
-  alert(cardTitle);
-  compltedTaskActions(cardTitle);
+ // alert(cardTitle);
+ const currentTime = getCurrentTime();
+ compltedTaskActions(cardTitle, currentTime);
 
 })
 
@@ -26,7 +27,8 @@ document.getElementById('card5-btn').addEventListener('click',
     this.blur();
 
     const cardTitle = document.getElementById('card-title-2').innerText;
-    compltedTaskActions(cardTitle);
+    const currentTime = getCurrentTime();
+    compltedTaskActions(cardTitle, currentTime);
   
   })
 
@@ -42,7 +44,8 @@ document.getElementById('card6-btn').addEventListener('click',
       this.blur();
       const cardTitle = document.getElementById('card-title-3').innerText;
 
-      compltedTaskActions(cardTitle);
+      const currentTime = getCurrentTime();
+      compltedTaskActions(cardTitle, currentTime);
     
     })
 
@@ -57,7 +60,8 @@ document.getElementById('card7-btn').addEventListener('click',
         this.blur();
 
         const cardTitle = document.getElementById('card-title-4').innerText;
-        compltedTaskActions(cardTitle);
+        const currentTime = getCurrentTime();
+        compltedTaskActions(cardTitle, currentTime);
       
       })
 
@@ -71,7 +75,8 @@ document.getElementById('card8-btn').addEventListener('click',
           this.disabled = true;
           this.blur();
           const cardTitle = document.getElementById('card-title-5').innerText;
-          compltedTaskActions(cardTitle);
+          const currentTime = getCurrentTime();
+        compltedTaskActions(cardTitle, currentTime);
         
         })
 
@@ -85,6 +90,7 @@ document.getElementById('card9-btn').addEventListener('click',
             this.disabled = true;
             this.blur();
             const cardTitle = document.getElementById('card-title-6').innerText;
-            compltedTaskActions(cardTitle);
+            const currentTime = getCurrentTime();
+            compltedTaskActions(cardTitle, currentTime);
           
           })
