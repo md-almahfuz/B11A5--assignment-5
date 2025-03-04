@@ -1,4 +1,4 @@
-document.getElementById('card4-btn').addEventListener('click', 
+document.getElementById('card-btn-4').addEventListener('click', 
 function(event)
 {
   event.preventDefault();
@@ -16,7 +16,7 @@ function(event)
 
 })
 
-document.getElementById('card5-btn').addEventListener('click', 
+document.getElementById('card-btn-5').addEventListener('click', 
   function(event)
   {
     event.preventDefault();
@@ -33,7 +33,7 @@ document.getElementById('card5-btn').addEventListener('click',
   })
 
 
-document.getElementById('card6-btn').addEventListener('click', 
+document.getElementById('card-btn-6').addEventListener('click', 
     function(event)
     {
       event.preventDefault();
@@ -49,7 +49,7 @@ document.getElementById('card6-btn').addEventListener('click',
     
     })
 
-document.getElementById('card7-btn').addEventListener('click', 
+document.getElementById('card-btn-7').addEventListener('click', 
       function(event)
       {
         event.preventDefault();
@@ -65,7 +65,7 @@ document.getElementById('card7-btn').addEventListener('click',
       
       })
 
-document.getElementById('card8-btn').addEventListener('click', 
+document.getElementById('card-btn-8').addEventListener('click', 
         function(event)
         {
           event.preventDefault();
@@ -80,8 +80,8 @@ document.getElementById('card8-btn').addEventListener('click',
         
         })
 
-document.getElementById('card9-btn').addEventListener('click', 
-          function(event)
+document.getElementById('card-btn-9').addEventListener('click',
+  function(event)
           {
             event.preventDefault();
           
@@ -93,4 +93,5 @@ document.getElementById('card9-btn').addEventListener('click',
             const currentTime = getCurrentTime();
             compltedTaskActions(cardTitle, currentTime);
           
-          })
+          }) 
+          
