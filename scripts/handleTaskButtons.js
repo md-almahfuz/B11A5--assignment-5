@@ -1,6 +1,4 @@
 
-
-
 // Handle Task Button Events
 
 const cardButtons = document.getElementsByClassName('card-btn');
@@ -17,24 +15,21 @@ const cardButtons = document.getElementsByClassName('card-btn');
         //Lets name the clicked button as clickedButton
         const clickedButton = this;
 
-
         //Get the card ID
         const cardId = event.target.id;
 
-        console.log(cardId);
-
-        //get the card number
+        //get the card number from card ID
         const match = cardId.match(/\d+/);
 
-
         //Get the card title from card number
-
         let cardTitle = "card-title-" + match;
 
+        //Get the card title innerText
         const cardTitleData = document.getElementById(cardTitle).innerText;
-        // const cardTitle = getInnerTextbyID(id)
-        // alert(cardTitle);
+        //Get the current time
         const currentTime = getCurrentTime();
+        
+        //Call the function to update the activity log
         compltedTaskActions(cardTitleData, currentTime);
         
       });
